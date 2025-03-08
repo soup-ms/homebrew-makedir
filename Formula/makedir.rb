@@ -1,7 +1,7 @@
 class Makedir < Formula
   desc "A better mkdir command: Create directories with predefined setups"
   homepage "https://github.com/soup-ms/makedir"
-  url "https://github.com/soup-ms/makedir/archive/refs/tags/makedir"
+  url "https://github.com/soup-ms/makedir/archive/refs/tags/v0.2.1.tar.gz"
   sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   license "MIT"
 
