@@ -1,12 +1,14 @@
 class Makedir < Formula
-  desc "Better mkdir: Create directories with predefined setups"
-  homepage "https://github.com/michaelsousajr/makedir"
-  url "https://github.com/michaelsousajr/makedir/releases/download/v0.1.0/makedir"
-  sha256 "15d9a1faaf993a3c25189b3060dd7d9d7dccd928e74b38344b6f4a7e87e1086d"
+  desc "A better mkdir command: Create directories with predefined setups"
+  homepage "https://github.com/soup-ms/makedir"
+  url "https://github.com/soup-ms/makedir/releases/download/v0.2.1/makedir"
+  sha256 "aab4fe1924f071c3cc13e6b6d26bf29157a7323240b88baa7259b4f9470c90c5"
   license "MIT"
 
+  depends_on "rust" => :build
+
   def install
-    bin.install "makedir"
+    system "cargo", "install", *std_cargo_args
   end
 
   test do
